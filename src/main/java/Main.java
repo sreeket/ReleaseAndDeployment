@@ -38,7 +38,7 @@ public class Main {
 
 
                 .get("yo", ctx -> {
-                    ctx.render("Hello Sree!");
+                    ctx.render("Hello Sree and Nick!");
                 })
 
 
