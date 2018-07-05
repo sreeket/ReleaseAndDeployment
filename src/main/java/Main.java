@@ -36,7 +36,13 @@ public class Main {
               ctx.render("Hello!");
             })
 
-            .get("db", ctx -> {
+
+                .get("yo", ctx -> {
+                    ctx.render("Hello Sree!");
+                })
+
+
+                .get("db", ctx -> {
               Blocking.get(() -> {
                 try (Connection connection = ctx.get(DataSource.class).getConnection()) {
                   Statement stmt = connection.createStatement();
